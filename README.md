@@ -3,51 +3,32 @@ This project simulates a secure and intelligent building access control system u
 
 🎯 Purpose
 The primary purpose of this project is to simulate and showcase:
-
 Secure entry management using RFID technology
-
 Automated control of physical infrastructure (doors, alarms, lighting, ventilation)
-
 Event-based IoT responses based on access control conditions
-
 Network design and communication within a smart building or enterprise IT environment
-
 This system can be adapted for offices, labs, schools, or restricted areas, where controlled access and responsive automation are essential for safety and efficiency.
 
 🧠 Key Features
 RFID Authentication Logic:
-
 Cards categorized as VALID or UNKNOWN
-
 Valid cards unlock the door and activate devices
-
 Invalid cards trigger an alarm and deny access
 
 Automated Actions:
-
 Devices respond instantly based on card status
-
 Light and fan respond to access status
-
 Alarm system ensures security on unauthorized attempts
 
 Dynamic Network Configuration:
-
 DHCP server assigns IPs automatically
-
 Centralized management via IoT server
-
 Enterprise IT Simulation:
-
 Multiple workstations simulate a realistic IT department scenario
 
 📋 RFID Conditions on the IoT Server
 ✅ RFID VALID
 If RFID card ID matches any of:
-
-yaml
-Copy
-Edit
 1001–1011
 → Action: Set RFID Status to Valid
 
@@ -63,35 +44,22 @@ Waiting	Lock	Off	Off	Off
 
 🌐 Network Topology Overview
 Router – 192.168.1.1
-
 DHCP Server – 192.168.1.2
-
-RFID Reader – 192.168.1.4
-
-Door Lock – 192.168.1.5
-
-Siren – 192.168.1.19
-
-Light – 192.168.1.17
-
-Fan – 192.168.1.18
-
+RFID Reader – 192.168.1.3
+Door Lock – 192.168.1.4
+Siren – 192.168.1.5
+Light – 192.168.1.6
+Fan – 192.168.1.7
 IT Department – PCs and Laptops for a simulated enterprise environment
 
 🛠 Technologies Used
 Cisco Packet Tracer
-
 RFID & IoT Device Simulation
-
 Event-Driven Automation
-
 DHCP, Routing & Switching
 
 🚀 How to Run
 Open .pkt file in Cisco Packet Tracer
-
 Run simulation
-
 Use RFID cards to test access
-
 Observe automation responses (door, siren, light, fan)
